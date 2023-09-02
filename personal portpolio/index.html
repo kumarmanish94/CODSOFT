@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7676011d10.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="left">Manish kumar</div>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openemenu()"></i>
+
+            </nav>
+            <div class="header-text">
+            <h5>Hi, This is <span>Manish Kumar</span><br>I am an Student of Reva university</h5>
+            </div>
+
+            </div>
+    </div>
+    <!--------------about------------ --->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+            <div class="about-col-1">
+                <img src="mk1234.jpg">
+             </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, My Name is Manish kumar and doing Mca at reva universtiy bengalore, karnataka.
+                I am passionate to learn different things and I have good knowledge in java programming language and have also good command in database language like SQL.
+                </p>
+
+                <div class="tab-titleS">
+                    <p class="tab-links">Skills</p>
+                </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Language</span><br>Java</li>
+                <li><span>Database Language</span><br>SQL</li>
+                <li><span>Extra computer skills</span><br>English typing speed 50 WPM</li>
+
+              </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>Fresher</span></li>
+                 </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2022</span><br>MCA From Reva university,Bengalore,karnataka</li>
+                  <li><span>2021</span><br>BCA From SAROJ MOHAN INSTITUTE OF
+                    TECHNOLOGY, GUPIPARA,
+                    HOOGHLY,(WEST BENGAL)</li>
+                  <li><span>2018</span><br>Inter From BIHAR BOARD DR.B.P.YADAV
+                    S.S SCHOOL
+                    BABHNAIYA,SARAN</li>
+                    <li><span>2015</span><br>Matriculation From CBSE BOARD USCD.DAV
+                        PUBLIC SCHOOL</li>
+                </ul>
+
+              </div>
+         </div>
+       </div>
+    </div>
+</div>
+              
+
+<!--------------------contact----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>mk78918328@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>7061xxxxxx</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Manish resume 1.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="your name" required>
+                    <input type="email" name="Email" placeholder="your Email" required>
+                    <input type="Message" rows="6" placeholder="your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                    </form>
+                   
+                
+                    </div>
+                  
+</div>
+
+<script>
+    var tablinks= document.getElementByClassName("tab-links");
+    var tabcontents= document.getElementByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classlist.remove("active-link");
+        }
+        
+        for(tabcontent of tabcontents){
+        tabcontent.classlist.remove("active-tab");
+            
+        }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemeu.style.right= "0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+
+        }
+        </script>
+    
+
+</body>
+</html>
